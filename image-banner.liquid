@@ -60,11 +60,11 @@
       {% assign blocks = section.blocks %}
         {% case blocks[block_handle].type %}
           {% when 'heading' %}
-            <h2 class="banner__heading {% if  blocks[block_handle].settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}">
+            <h2 style="font-size: 2.5rem;font-weight: 900" class="banner__heading {% if  blocks[block_handle].settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}">
               <span>{{ blocks[block_handle].settings.heading | escape }}</span>
             </h2>
           {% when 'text' %}
-            <div class="banner__text" style="font-size: 2.9rem;font-weight: 500;">
+            <div class="banner__text" style="font-size: 1.5rem;font-weight: 500;">
               <span>{{ blocks[block_handle].settings.text | escape }}</span>
             </div>
           {% when 'buttons' %}
