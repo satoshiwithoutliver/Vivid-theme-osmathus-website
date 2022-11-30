@@ -65,7 +65,7 @@
             </h2>
           {% when 'text' %}
             <div class="banner__text" style="font-size: 1.5rem;font-weight: 500;">
-              <span>{{ blocks[block_handle].settings.text | escape }}</span>
+              <span>{{ blocks[block_handle].settings.text}}</span>
             </div>
           {% when 'buttons' %}
             <div class="banner__buttons{% if  blocks[block_handle].settings.button_label_1 != "" and  blocks[block_handle].settings.button_link_1 != "" and  blocks[block_handle].settings.button_label_2 != "" and  blocks[block_handle].settings.button_link_2 != "" %} banner__buttons--multiple{% endif %}">
